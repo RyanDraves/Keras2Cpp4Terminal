@@ -12,7 +12,6 @@ class NeuralNet(object):
         lib_net.NeuralNet_new.argtypes = [ctypes.c_char_p, ctypes.c_bool]
         lib_net.NeuralNet_new.restype = ctypes.c_void_p
 
-        #lib_net.NeuralNet_compute_output.argtypes = [ctypes.c_void_p, ctypes.POINTER(ctypes.c_float) * 1344, ctypes.c_int, ctypes.c_int]
         lib_net.NeuralNet_compute_output.argtypes = [ctypes.c_void_p, ctypes.c_float * self.INPUT_SIZE, ctypes.c_int, ctypes.c_int]
         lib_net.NeuralNet_compute_output.restype = ctypes.POINTER(ctypes.c_float * self.OUTPUT_SIZE)
 
