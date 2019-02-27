@@ -3,7 +3,7 @@
 This is a bunch of code to port Keras neural network model into pure C++. Neural network weights and architecture are stored in plain text file and input is presented as `vector<vector<vector<float> > >` in case of image. The code is prepared to support simple Convolutional network (from MNIST example) but can be easily extended. There are implemented only ReLU and Softmax activations.
 
 It is working with the Theano backend - support for Tensorflow will be added soon.
-[Ryan D note: I had no issues with Tensorflow in a fully connected neural network (i.e. just a bunch of Dense layers put together)]
+[Ryan D note: I had no issues with a Tensorflow in a fully connected neural network (i.e. just a bunch of Dense layers put together)]
 
 ## Usage
 
@@ -27,7 +27,7 @@ It is working with the Theano backend - support for Tensorflow will be added soo
 
 ## Testing
 
-If you want to test dumping for your network, please use `test_run.sh` script. Please provide there your network architecture and weights. The script does the following job:
+[Ryan D note: The testing script is not updated to the latest version of Keras. You can make a pull request if you fix it, but it's not a needed script.] If you want to test dumping for your network, please use `test_run.sh` script. Please provide there your network architecture and weights. The script does the following job:
 
  1. Dump network into text file.
  2. Generate random sample.
