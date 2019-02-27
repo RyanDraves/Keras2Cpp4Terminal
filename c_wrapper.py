@@ -3,7 +3,6 @@ import sys
 
 # Having troubles here? Me too. Feel free to make a pull request if you know how to make this work reliably...
 lib_net = ctypes.cdll.LoadLibrary(sys.path[0] + '/libneural_net.so')
-#lib_net = ctypes.cdll.LoadLibrary('/mnt/c/Users/rdrav/Workspaces/src/TerminalUM/game-engine/game_engine/envs/gamelib/libneural_net.so')
 
 class NeuralNet(object):
     def __init__(self, nnet_filename, input_size, output_size, verbose = False):
